@@ -1,0 +1,65 @@
+@import 'config/resets.scss';
+@import 'config/variables.scss';
+@import 'config/components.scss';
+
+.header{
+    width: 100%;
+    height: 50px;
+    background: $black;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content{
+    margin: 60px 0 5px;
+    overflow-y: scroll;
+
+    .feature{
+        .image{
+            background: url('../imgs/lorem-image.jpg');
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .band-title{
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                font-size: 2em;
+                color: #fff;
+            }
+
+        }
+        .text{
+            text-align: justify;
+        }
+    }
+}
+
+.menu{
+    width: 100%;
+    height: 75px;
+    background: $black;
+    color: $white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.75);
+
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
