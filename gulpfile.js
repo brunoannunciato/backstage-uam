@@ -14,12 +14,12 @@ var paths = {
 	webpack : 'src/scripts/*.js',
 	scripts: ['src/scripts/**/*.js', '!src/scripts/vendor/**/*.js'],
 	styles  : ['src/styles/**/*.scss'],
-	images  : 'src/images/**/*.{png,jpeg,jpg,gif,svg}',
-	extras  : ['src/*.*', 'src/fonts/**/*', 'src/videos/**/*'],
+	images  : 'src/imgs/**/*.{png,jpeg,jpg,gif,svg}',
+	extras: ['src/*.*', 'src/pages/*.*', 'src/fonts/**/*', 'src/videos/**/*'],
 	dest    : {
-		scripts : 'dist/js',
+		scripts : 'dist/scripts',
 		styles  : 'dist/css',
-		images  : 'dist/img',
+		images  : 'dist/imgs',
 		extras  : 'dist',
 		build: [ 'dist/**', '!dist/**/*.map' ]
 	}
