@@ -32,3 +32,28 @@
         }
     }
 }
+
+.programas{
+    .slider{
+        .banda{
+            width: 100px;
+            height: 150px;
+            display: inline-block;
+            overflow-x: scroll;
+            
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                display: block;
+                margin: 0 auto 5px;;
+            }
+
+            .band-title{
+                font-family: 'Raleway', sans-serif;
+                font-size: .75em;
+                text-align: center;
+            }
+        }
+    }
+}
