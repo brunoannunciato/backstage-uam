@@ -1,8 +1,8 @@
 {
-  "name": "office-bot-banner-light",
-  "description": "Banners Office Bot",
-  "version": "1.0.4",
-  "author": "Lucas Monteverde",
+  "name": "backstage",
+  "description": "Projeto integrado Anhembi Morumbi",
+  "version": "1.0.5",
+  "author": "Bruno Annunciato",
   "private": true,
   "dependencies": {
     "animate-sass": "tgdev/animate-sass",
