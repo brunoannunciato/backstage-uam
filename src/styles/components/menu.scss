@@ -20,6 +20,22 @@
         width: 30px;
         height: 30px;
     }
+
+    a{
+        text-align: center;
+        text-decoration: none;
+        
+        p{
+            font-size: .75em;
+            color: $white;
+            font-family: 'Raleway', sans-serif;
+            margin-top: 5px;
+
+        }
+    }
+    &:visited{
+        color: $white;
+    }
 }
 
 .home{
