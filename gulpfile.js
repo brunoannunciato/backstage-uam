@@ -67,8 +67,7 @@ gulp.task('styles', function () {
 			outputStyle: $.util.env.production ? 'compressed' : 'nested',
 			includePaths: [
 				'src/styles',
-				'node_modules',
-				'node_modules/bootstrap-sass/assets/stylesheets'
+				'node_modules'
 			]
 		}).on('error', $.sass.logError))
 		.pipe($.postcss([ autoprefixer(), mqpacker({sort: true}) ]))
