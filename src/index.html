@@ -9,8 +9,23 @@
     <link rel="manifest" href="/manifest.json">
     
     <title>Backstage</title>
+
+    <script>
+        function init() {
+            console.log('asddsa');
+
+            $('.slider').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                accessibility: false
+            });
+        }
+    </script>
+
 </head>
-<body class="home">
+<body class="home" onload="init()">
     <section class="header">
         <h1 class="title">
             <img src="imgs/logo-invert.png" alt="Backstage" class="logo">
@@ -48,6 +63,17 @@
                 });
             }
         </script>
+        <div class="slider">
+            <div>
+                1
+            </div>
+            <div>
+                2
+            </div>
+            <div>
+                3
+            </div>
+        </div>
     </section>
     
     <section class="menu">
@@ -70,6 +96,8 @@
             </a>
         </div>
     </section>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="scripts/app.min.js"></script>
 </body>
 </html>

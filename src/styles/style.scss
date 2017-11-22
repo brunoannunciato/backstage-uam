@@ -4,8 +4,14 @@
 
 @import 'components/header.scss';
 @import 'components/menu.scss';
+@import 'components/slick.scss';
+@import 'components/slick-theme.scss';
 @import 'pages/home.scss';
 
 section.content{
     margin-top: 80px;
+}
+
+.slick-arrow{
+    display: none !important;
 }

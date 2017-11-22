@@ -1,7 +1,7 @@
 'use strict';
 
+var slick = require('dependencies/slick.min');
+
 (function(){
-
-
-    console.log('hello work');
+    slick();
 }())
