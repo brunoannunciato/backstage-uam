@@ -1,5 +1,47 @@
-.home{
-    .featured{
+.home {
+    .featured {
         margin: 5% 0;
+    }
+
+    #player {
+        margin-top: 5%;
+    }
+
+    .bands {
+        margin-top: 10%;
+
+        .slider {
+            margin-top: 5%;
+        }
+
+        .band {
+            width: 125px;
+            height: 200px;
+
+            a {
+                text-decoration: none;
+            }
+
+            .band-image-box {
+                overflow: hidden;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin: 0 auto;
+                box-sizing: border-box;
+            
+                .band-image {
+                        width: 150%;
+                        padding-right: 33px;
+                        margin-left: -25px;
+                }
+            }
+
+            .band-title {
+                margin-top: 5%;
+                color: $black;
+                text-align: center;
+            }
+        }
     }
 }
