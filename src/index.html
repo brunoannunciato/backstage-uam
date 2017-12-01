@@ -18,6 +18,8 @@
                 dots: true,
                 infinite: true,
                 speed: 300,
+                slidesToScroll: 3,
+                autoplaySpeed: 1500,
                 slidesToShow: 3,
                 accessibility: false,
                 autoplay: true
@@ -57,7 +59,7 @@
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                    height: '50%',
+                    height: '175px',
                     width: '100%',
                     videoId: 'ZKAzBlgMcko',
                     playerVars: { 'autoplay': 1, 'controls': 0 }
@@ -71,7 +73,7 @@
             </h3>
             <div class="slider">
                 <div class="band">
-                    <a href="#">
+                    <a href="pages/alude.html">
                         <div class="band-image-box">
                             <img src="imgs/bandas/alude.jpg" alt="Alude" class="band-image">
                         </div>
@@ -79,15 +81,7 @@
                     </a>
                 </div>
                 <div class="band">
-                    <a href="#">
-                        <div class="band-image-box">
-                            <img src="imgs/bandas/dead-fish.jpg" alt="Dead Fish" class="band-image">
-                        </div>
-                        <p class="band-title">Dead Fish</p>
-                    </a>
-                </div>
-                <div class="band">
-                    <a href="#">
+                    <a href="pages/pense.html">
                         <div class="band-image-box">
                             <img src="imgs/bandas/pense.jpg" alt="Pense" class="band-image">
                         </div>
@@ -95,7 +89,7 @@
                     </a>
                 </div>
                 <div class="band">
-                    <a href="#">
+                    <a href="pages/bullet-bane.html">
                         <div class="band-image-box">
                             <img src="imgs/bandas/bullet-bane.jpg" alt="bullet bane" class="band-image">
                         </div>
@@ -103,7 +97,15 @@
                     </a>
                 </div>
                 <div class="band">
-                    <a href="#">
+                    <a href="pages/dead-fish.html">
+                        <div class="band-image-box">
+                            <img src="imgs/bandas/dead-fish.jpg" alt="Dead Fish" class="band-image">
+                        </div>
+                        <p class="band-title">Dead Fish</p>
+                    </a>
+                </div>
+                <div class="band">
+                    <a href="/pages/garage-fuzz.html">
                         <div class="band-image-box">
                             <img src="imgs/bandas/garage-fuzz.jpg" alt="Garage Fuzz" class="band-image">
                         </div>

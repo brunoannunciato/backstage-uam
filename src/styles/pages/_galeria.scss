@@ -1,14 +1,38 @@
 .galeria {
+    
+    .content {
+        margin: 75px 0 80px;
+    }
+
     .logo {
         width: 100%;
     }
 
+    .alude {
+        background: url('../imgs/galeria/alude.jpeg');
+        background-size: cover;
+    }
+
+    .pense {
+        background: url('../imgs/galeria/pense.jpg');
+        background-size: cover; 
+    }
+
+    .bullet-bane {
+        background: url('../imgs/galeria/bullet-bane.jpg');
+        background-size: cover; 
+    }
+
+
+    a {
+        text-decoration: none;
+    }
     .band {
         width: 100%;
         display: flex;
         justify-content: center;
-        height: 100%;
-        background: url('../imgs/galeria/alude.jpeg');
+        padding: 25% 0;
+        margin: -25px 0 30px;
 
         .band-image {
             width: 100%;
@@ -21,7 +45,30 @@
             font-size: 2em;
             color: $white;
             font-weight: 700;
-            margin-top: 2%;
+            margin-top: -22%;
+            text-shadow: 0px 0px 20px #000;
+        }
+    }
+
+    .content {
+    }
+    
+    .band-infos {
+        margin-bottom: 75px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10%;
+        
+        .topic {
+            font-weight: 900;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+
+        .text-justify {
+            text-align: justify;
+            line-height: 25px;
+            font-weight: 600;
         }
     }
 }
