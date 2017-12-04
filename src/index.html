@@ -10,22 +10,11 @@
     
     <title>Backstage</title>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function () {
-            console.log('service worker registered');
-          })
-          .catch(function () {
-            console.warn('service worker failed');
-          });
-        }
-    </script>
+    
 
     <script>
         function init() {
             console.log('asddsa');
-
             $('.slider').slick({
                 dots: true,
                 infinite: true,
@@ -41,6 +30,18 @@
 
 </head>
 <body class="home" onload="init()">
+    <script>
+        if (navigator.serviceWorker.controller) {
+                console.log('[PWA Builder] active service worker found, no need to register')
+            } else {
+                //Register the ServiceWorker
+                navigator.serviceWorker.register('pwabuilder-sw.js', {
+                    scope: './'
+                }).then(function (reg) {
+                    console.log('Service worker has been registered for scope:' + reg.scope);
+                });
+            }
+    </script>
     <header class="header">
         <h1 class="title">
             <img src="imgs/logo-invert.png" alt="Backstage" class="logo">
@@ -149,8 +150,20 @@
             </a>
         </div>
     </section>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="scripts/app.min.js"></script>
+
 </body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function () {
+                console.log('service worker registered');
+            })
+            .catch(function () {
+                console.warn('service worker failed');
+            });
+    }
+</script>
 </html>
