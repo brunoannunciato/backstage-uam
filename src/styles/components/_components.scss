@@ -27,3 +27,17 @@
     text-align: center;
     line-height: 20px;
 }
+
+.closed{
+        opacity: 0;
+        transition: all 1s ease;
+}
+
+.opened{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.bg-black {
+    background: #000;
+}

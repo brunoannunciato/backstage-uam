@@ -3,8 +3,32 @@
         margin: 5% 0;
     }
 
-    #player {
-        margin-top: 5%;
+    .video-box {
+        position: relative;
+
+        #player {
+            margin-top: 5%;
+            z-index: 10;
+        }
+
+        .internet-alert {
+            font-size: 1.5em;
+            color: black;
+            position: relative;
+            top:-95px;
+            left: 140px;
+            z-index: -1;
+        
+            &:before {
+                content: 'X';
+                font-weight: bolder;
+                font-size: 1.3em;
+                color: $red;
+                margin: 0 1%;
+                position: absolute;
+                left: 10px;
+            }
+        }
     }
 
     .bands {
