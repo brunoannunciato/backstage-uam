@@ -1,9 +1,7 @@
 'use strict';
 
-var slick = require('dependencies/slick.min');
-/*var transition = require('dependencies/transition.js');*/
+var search = require('dependencies/search.js');
 
 (function(){
-    slick();
-    /*transition();*/
+    search();
 }())
