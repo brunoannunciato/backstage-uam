@@ -1,7 +1,7 @@
 {
   "name": "backstage",
   "description": "Projeto integrado Anhembi Morumbi",
-  "version": "1.0.21",
+  "version": "1.0.24",
   "author": "Bruno Annunciato",
   "private": true,
   "dependencies": {
